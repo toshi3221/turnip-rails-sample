@@ -94,3 +94,5 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+Dir.glob("spec/**/*steps.rb") { |f| load f, true }
